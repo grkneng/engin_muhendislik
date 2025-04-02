@@ -1,1 +1,0 @@
-# engin_muhendislik
