@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mekanik Sistemler Üzerine Bir İnceleme</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Prism CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet" />
+
+        <!-- MathJax -->
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"]
+                    ],
+                    displayMath: [
+                        ["$$", "$$"],
+                        ["\\[", "\\]"]
+                    ]
+                },
+                svg: { fontCache: "global" }
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
+
+        <!-- Prism CSS -->
+        <link href="style.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="#">Endüstriyel Platform</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Ana Sayfa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Makaleler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kaynaklar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- İki sütunlu düzen -->
+        <div class="container my-5">
+            <div class="row">
+                <!-- Sidebar -->
+                <aside class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="p-2 rounded">
+                        <h2 class="h6 mb-3">Faaliyet Alanları</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#uygulamalar" class="link-secondary">Su Yönetimi</a></li>
+                            <li><a href="#kaynaklar" class="link-secondary">HVAC</a></li>
+                            <li><a href="#raporlar" class="link-secondary">Yangın Güvenliği</a></li>
+                            <li><a href="#raporlar" class="link-secondary">Otomasyon</a></li>
+                        </ul>
+                        <hr />
+                        <h2 class="h6 mb-3">Bağlantılar</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#standartlar" class="link-secondary">Endüstriyel Süreçler</a></li>
+                            <li><a href="#materyaller" class="link-secondary">Konfor Sistemleri</a></li>
+                            <li><a href="#materyaller" class="link-secondary">Servis & Bakım</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Ana içerik -->
+                <main class="col-lg-9">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="mb-3 ms-2">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item"><a href="#">Makaleler</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Mekanik Sistemler Üzerine Bir İnceleme
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- Başlık ve meta -->
+                    <h1 class="mb-2 ms-">Mekanik Sistemler Üzerine Bir İnceleme</h1>
+                    <p class="text-muted mb-4">Yayın tarihi: 30 Aralık 2025 · Yazar: Teknik Editör</p>
+
+                    <!-- Açıklama -->
+                    <p class="lead mb-4">
+                        Bu makale, endüstriyel tesislerde kullanılan mekanik sistemlerin performansını ve enerji
+                        verimliliğini gözlemci bir üslup ile ele almaktadır.
+                    </p>
+
+                    <!-- Öne çıkan görsel -->
+                    <figure class="mb-4">
+                        <img src="https://picsum.photos/900/400" class="img-fluid rounded" alt="Öne çıkan görsel" />
+                        <figcaption class="small text-muted mt-2">Şekil 1. Mekanik tesisatın saha görünümü</figcaption>
+                    </figure>
+
+                    <!-- Alt başlık ve paragraflar -->
+                    <h2 class="h4 mb-3">Enerji Yönetimi</h2>
+                    <p>
+                        Tesislerde enerji tüketim kalıpları düzenli olarak ölçülmekte ve raporlanmaktadır. Bu veriler,
+                        iyileştirme fırsatlarını ortaya koymaktadır.
+                    </p>
+
+                    <h2 class="h4 mb-3">Performans Karşılaştırmaları</h2>
+                    <p>Benzer sistemlerin performans sonuçları aşağıdaki tabloda özetlenmiştir.</p>
+
+                    <!-- Tablo -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sistem</th>
+                                <th>Verimlilik (%)</th>
+                                <th>Bakım Sıklığı (ay)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pompa A</td>
+                                <td>85</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Pompa B</td>
+                                <td>78</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Pompa C</td>
+                                <td>90</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Kod bloğu (Prism ile) -->
+                    <h2 class="h4 mb-3">Örnek Kod</h2>
+                    <pre><code class="language-python">
+def enerji_verimlilik(girdi, cikti):
+    return (cikti / girdi) * 100
+
+print(enerji_verimlilik(1200, 1020))
+          </code></pre>
+
+                    <!-- MathJax formüller -->
+                    <h2 class="h4 mb-3">Matematiksel İfade</h2>
+                    <p>Enerji verimliliği şu şekilde tanımlanır: $\\eta = \\frac{Çıktı}{Girdi} \\times 100 \\%$</p>
+                    <p>Fourier yasası: $$ q = -k \\nabla T $$</p>
+
+                    <!-- Kaynakça -->
+                    <h2 class="h4 mb-3">Kaynakça</h2>
+                    <ol class="small">
+                        <li>ISO 50001: Enerji Yönetim Sistemleri Standardı.</li>
+                        <li>ASHRAE Handbook: HVAC Applications, 2023.</li>
+                        <li>
+                            Smith, J. (2022). <em>Industrial Pump Efficiency Studies</em>. Journal of Mechanical
+                            Systems.
+                        </li>
+                    </ol>
+                </main>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="border-top mt-5 bg-light">
+            <div class="container py-4">
+                <h5 class="mb-1">Endüstriyel Sistemler ve Teknoloji Platformu</h5>
+                <p class="small text-muted mb-0">
+                    Bu içerikler
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="link-secondary">
+                        Creative Commons BY 4.0</a
+                    >
+                    lisansı altında sunulmaktadır. Kaynak gösterilerek kullanılabilir ve paylaşılabilir.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Prism JS -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+    </body>
+</html>

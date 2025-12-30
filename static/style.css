@@ -1,0 +1,93 @@
+/* Genel tipografi */
+body {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.6;
+    color: #212529; /* Bootstrap'in varsayılan metin rengi */
+    background-color: #fff;
+}
+
+/* Başlıklar */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+   
+    color: #1a1a1a;
+}
+
+/* Paragraflar */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Linkler */
+a {
+    text-decoration: none;
+    color: #0d6efd; /* Varsayılan mavi */
+    font-weight: 500; /* Biraz daha belirgin */
+    transition:
+        color 0.2s ease-in,
+        border-bottom 0.2s ease-in;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #0a58ca; /* Daha koyu mavi */
+    border-bottom: 1px solid #0a58ca; /* Alt çizgi hover’da belirginleşir */
+}
+
+a:focus {
+    outline: none;
+    color: #0a58ca;
+    border-bottom: 1px solid #0a58ca;
+}
+
+/* Tablo */
+table {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+th {
+    font-weight: 600;
+}
+
+/* Figcaption */
+figcaption {
+    font-size: 0.85rem;
+    color: #6c757d; /* Bootstrap muted */
+}
+
+/* Prism kod bloklarını sadeleştirme */
+pre[class*="language-"] {
+    background: none !important;
+    border: none !important;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Sol tarafta dikey çizgi */
+pre[class*="language-"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #dee2e6;
+    border-radius: 2px;
+}
+
+/* Kod satırları */
+code[class*="language-"] {
+    background: none !important;
+    color: inherit;
+    font-size: 0.95rem;
+}
